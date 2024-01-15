@@ -16,7 +16,7 @@ struct Diff: View {
         Text("\(classCar.name)의 주인은 \(classCar.owner)입니다.")
         VStack {
             Button {
-                var broCar = classCar
+                let broCar = classCar
                 broCar.name = "동생차"
                 broCar.owner = "동생"
                 classCar.sayhi()

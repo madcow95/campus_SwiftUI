@@ -11,7 +11,7 @@ import SwiftUI
 struct swiftUI_firstApp: App {
     var body: some Scene {
         WindowGroup {
-            Diff()
+            Sample()
         }
     }
 }
