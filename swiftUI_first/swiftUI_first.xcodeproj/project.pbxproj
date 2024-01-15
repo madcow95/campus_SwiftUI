@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD02EA062B553718006E00BC /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02EA052B553718006E00BC /* Diff.swift */; };
 		CD428DF52B553E5100FBF7D1 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD428DF42B553E5100FBF7D1 /* Sample.swift */; };
+		CD428DF72B55430A00FBF7D1 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD428DF62B55430A00FBF7D1 /* Exception.swift */; };
 		CDB43C762B54CA6100AB640A /* swiftUI_firstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB43C752B54CA6100AB640A /* swiftUI_firstApp.swift */; };
 		CDB43C782B54CA6100AB640A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB43C772B54CA6100AB640A /* ContentView.swift */; };
 		CDB43C7A2B54CA6200AB640A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB43C792B54CA6200AB640A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		CD02EA052B553718006E00BC /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
 		CD428DF42B553E5100FBF7D1 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sample.swift; path = ../../../../Documents/Sample.swift; sourceTree = "<group>"; };
+		CD428DF62B55430A00FBF7D1 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = ../../../../Documents/Exception.swift; sourceTree = "<group>"; };
 		CDB43C722B54CA6100AB640A /* swiftUI_first.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI_first.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB43C752B54CA6100AB640A /* swiftUI_firstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUI_firstApp.swift; sourceTree = "<group>"; };
 		CDB43C772B54CA6100AB640A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				CDB43C852B54CA9B00AB640A /* Elevator.swift */,
 				CD02EA052B553718006E00BC /* Diff.swift */,
 				CD428DF42B553E5100FBF7D1 /* Sample.swift */,
+				CD428DF62B55430A00FBF7D1 /* Exception.swift */,
 			);
 			path = swiftUI_first;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				CD428DF52B553E5100FBF7D1 /* Sample.swift in Sources */,
 				CDB43C782B54CA6100AB640A /* ContentView.swift in Sources */,
 				CDB43C762B54CA6100AB640A /* swiftUI_firstApp.swift in Sources */,
+				CD428DF72B55430A00FBF7D1 /* Exception.swift in Sources */,
 				CD02EA062B553718006E00BC /* Diff.swift in Sources */,
 				CDB43C862B54CA9B00AB640A /* Elevator.swift in Sources */,
 			);
