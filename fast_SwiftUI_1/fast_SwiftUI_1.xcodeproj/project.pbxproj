@@ -14,6 +14,8 @@
 		CD84FE222B567E0B00858298 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE212B567E0B00858298 /* SimpleView.swift */; };
 		CD84FE242B56818A00858298 /* SimpleView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE232B56818A00858298 /* SimpleView2.swift */; };
 		CD84FE262B5683C900858298 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE252B5683C900858298 /* MyButton.swift */; };
+		CD84FE282B5687ED00858298 /* SimpleView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE272B5687ED00858298 /* SimpleView3.swift */; };
+		CD84FE2A2B56883600858298 /* MyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE292B56883600858298 /* MyHStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CD84FE212B567E0B00858298 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 		CD84FE232B56818A00858298 /* SimpleView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView2.swift; sourceTree = "<group>"; };
 		CD84FE252B5683C900858298 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		CD84FE272B5687ED00858298 /* SimpleView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView3.swift; sourceTree = "<group>"; };
+		CD84FE292B56883600858298 /* MyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				CD84FE212B567E0B00858298 /* SimpleView.swift */,
 				CD84FE232B56818A00858298 /* SimpleView2.swift */,
 				CD84FE252B5683C900858298 /* MyButton.swift */,
+				CD84FE272B5687ED00858298 /* SimpleView3.swift */,
+				CD84FE292B56883600858298 /* MyHStack.swift */,
 			);
 			path = fast_SwiftUI_1;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			files = (
 				CD84FE162B567DC900858298 /* ContentView.swift in Sources */,
 				CD84FE222B567E0B00858298 /* SimpleView.swift in Sources */,
+				CD84FE2A2B56883600858298 /* MyHStack.swift in Sources */,
+				CD84FE282B5687ED00858298 /* SimpleView3.swift in Sources */,
 				CD84FE262B5683C900858298 /* MyButton.swift in Sources */,
 				CD84FE142B567DC900858298 /* fast_SwiftUI_1App.swift in Sources */,
 				CD84FE242B56818A00858298 /* SimpleView2.swift in Sources */,
