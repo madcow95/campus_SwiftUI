@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  swiftUI_first
+//  fast_SwiftUI_1
 //
-//  Created by MadCow on 2024/1/15.
+//  Created by MadCow on 2024/1/16.
 //
 
 import SwiftUI

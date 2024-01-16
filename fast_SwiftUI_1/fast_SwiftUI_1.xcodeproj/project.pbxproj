@@ -7,30 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD02EA062B553718006E00BC /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD02EA052B553718006E00BC /* Diff.swift */; };
-		CD428DF52B553E5100FBF7D1 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD428DF42B553E5100FBF7D1 /* Sample.swift */; };
-		CD428DF72B55430A00FBF7D1 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD428DF62B55430A00FBF7D1 /* Exception.swift */; };
-		CDB43C762B54CA6100AB640A /* swiftUI_firstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB43C752B54CA6100AB640A /* swiftUI_firstApp.swift */; };
-		CDB43C782B54CA6100AB640A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB43C772B54CA6100AB640A /* ContentView.swift */; };
-		CDB43C7A2B54CA6200AB640A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB43C792B54CA6200AB640A /* Assets.xcassets */; };
-		CDB43C7D2B54CA6200AB640A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB43C7C2B54CA6200AB640A /* Preview Assets.xcassets */; };
-		CDB43C862B54CA9B00AB640A /* Elevator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB43C852B54CA9B00AB640A /* Elevator.swift */; };
+		CD84FE142B567DC900858298 /* fast_SwiftUI_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE132B567DC900858298 /* fast_SwiftUI_1App.swift */; };
+		CD84FE162B567DC900858298 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE152B567DC900858298 /* ContentView.swift */; };
+		CD84FE182B567DCA00858298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD84FE172B567DCA00858298 /* Assets.xcassets */; };
+		CD84FE1B2B567DCA00858298 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD84FE1A2B567DCA00858298 /* Preview Assets.xcassets */; };
+		CD84FE222B567E0B00858298 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE212B567E0B00858298 /* SimpleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD02EA052B553718006E00BC /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
-		CD428DF42B553E5100FBF7D1 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Sample.swift; path = ../../../../Documents/Sample.swift; sourceTree = "<group>"; };
-		CD428DF62B55430A00FBF7D1 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = ../../../../Documents/Exception.swift; sourceTree = "<group>"; };
-		CDB43C722B54CA6100AB640A /* swiftUI_first.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUI_first.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDB43C752B54CA6100AB640A /* swiftUI_firstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUI_firstApp.swift; sourceTree = "<group>"; };
-		CDB43C772B54CA6100AB640A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CDB43C792B54CA6200AB640A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDB43C7C2B54CA6200AB640A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CDB43C852B54CA9B00AB640A /* Elevator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elevator.swift; sourceTree = "<group>"; };
+		CD84FE102B567DC900858298 /* fast_SwiftUI_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fast_SwiftUI_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD84FE132B567DC900858298 /* fast_SwiftUI_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fast_SwiftUI_1App.swift; sourceTree = "<group>"; };
+		CD84FE152B567DC900858298 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD84FE172B567DCA00858298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD84FE1A2B567DCA00858298 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD84FE212B567E0B00858298 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CDB43C6F2B54CA6100AB640A /* Frameworks */ = {
+		CD84FE0D2B567DC900858298 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,41 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CDB43C692B54CA6100AB640A = {
+		CD84FE072B567DC900858298 = {
 			isa = PBXGroup;
 			children = (
-				CDB43C742B54CA6100AB640A /* swiftUI_first */,
-				CDB43C732B54CA6100AB640A /* Products */,
+				CD84FE122B567DC900858298 /* fast_SwiftUI_1 */,
+				CD84FE112B567DC900858298 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CDB43C732B54CA6100AB640A /* Products */ = {
+		CD84FE112B567DC900858298 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CDB43C722B54CA6100AB640A /* swiftUI_first.app */,
+				CD84FE102B567DC900858298 /* fast_SwiftUI_1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CDB43C742B54CA6100AB640A /* swiftUI_first */ = {
+		CD84FE122B567DC900858298 /* fast_SwiftUI_1 */ = {
 			isa = PBXGroup;
 			children = (
-				CDB43C752B54CA6100AB640A /* swiftUI_firstApp.swift */,
-				CDB43C772B54CA6100AB640A /* ContentView.swift */,
-				CDB43C792B54CA6200AB640A /* Assets.xcassets */,
-				CDB43C7B2B54CA6200AB640A /* Preview Content */,
-				CDB43C852B54CA9B00AB640A /* Elevator.swift */,
-				CD02EA052B553718006E00BC /* Diff.swift */,
-				CD428DF42B553E5100FBF7D1 /* Sample.swift */,
-				CD428DF62B55430A00FBF7D1 /* Exception.swift */,
+				CD84FE132B567DC900858298 /* fast_SwiftUI_1App.swift */,
+				CD84FE152B567DC900858298 /* ContentView.swift */,
+				CD84FE172B567DCA00858298 /* Assets.xcassets */,
+				CD84FE192B567DCA00858298 /* Preview Content */,
+				CD84FE212B567E0B00858298 /* SimpleView.swift */,
 			);
-			path = swiftUI_first;
+			path = fast_SwiftUI_1;
 			sourceTree = "<group>";
 		};
-		CDB43C7B2B54CA6200AB640A /* Preview Content */ = {
+		CD84FE192B567DCA00858298 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				CDB43C7C2B54CA6200AB640A /* Preview Assets.xcassets */,
+				CD84FE1A2B567DCA00858298 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -82,39 +73,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDB43C712B54CA6100AB640A /* swiftUI_first */ = {
+		CD84FE0F2B567DC900858298 /* fast_SwiftUI_1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDB43C802B54CA6200AB640A /* Build configuration list for PBXNativeTarget "swiftUI_first" */;
+			buildConfigurationList = CD84FE1E2B567DCA00858298 /* Build configuration list for PBXNativeTarget "fast_SwiftUI_1" */;
 			buildPhases = (
-				CDB43C6E2B54CA6100AB640A /* Sources */,
-				CDB43C6F2B54CA6100AB640A /* Frameworks */,
-				CDB43C702B54CA6100AB640A /* Resources */,
+				CD84FE0C2B567DC900858298 /* Sources */,
+				CD84FE0D2B567DC900858298 /* Frameworks */,
+				CD84FE0E2B567DC900858298 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = swiftUI_first;
-			productName = swiftUI_first;
-			productReference = CDB43C722B54CA6100AB640A /* swiftUI_first.app */;
+			name = fast_SwiftUI_1;
+			productName = fast_SwiftUI_1;
+			productReference = CD84FE102B567DC900858298 /* fast_SwiftUI_1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CDB43C6A2B54CA6100AB640A /* Project object */ = {
+		CD84FE082B567DC900858298 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					CDB43C712B54CA6100AB640A = {
+					CD84FE0F2B567DC900858298 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = CDB43C6D2B54CA6100AB640A /* Build configuration list for PBXProject "swiftUI_first" */;
+			buildConfigurationList = CD84FE0B2B567DC900858298 /* Build configuration list for PBXProject "fast_SwiftUI_1" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,46 +113,43 @@
 				en,
 				Base,
 			);
-			mainGroup = CDB43C692B54CA6100AB640A;
-			productRefGroup = CDB43C732B54CA6100AB640A /* Products */;
+			mainGroup = CD84FE072B567DC900858298;
+			productRefGroup = CD84FE112B567DC900858298 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CDB43C712B54CA6100AB640A /* swiftUI_first */,
+				CD84FE0F2B567DC900858298 /* fast_SwiftUI_1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CDB43C702B54CA6100AB640A /* Resources */ = {
+		CD84FE0E2B567DC900858298 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB43C7D2B54CA6200AB640A /* Preview Assets.xcassets in Resources */,
-				CDB43C7A2B54CA6200AB640A /* Assets.xcassets in Resources */,
+				CD84FE1B2B567DCA00858298 /* Preview Assets.xcassets in Resources */,
+				CD84FE182B567DCA00858298 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CDB43C6E2B54CA6100AB640A /* Sources */ = {
+		CD84FE0C2B567DC900858298 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD428DF52B553E5100FBF7D1 /* Sample.swift in Sources */,
-				CDB43C782B54CA6100AB640A /* ContentView.swift in Sources */,
-				CDB43C762B54CA6100AB640A /* swiftUI_firstApp.swift in Sources */,
-				CD428DF72B55430A00FBF7D1 /* Exception.swift in Sources */,
-				CD02EA062B553718006E00BC /* Diff.swift in Sources */,
-				CDB43C862B54CA9B00AB640A /* Elevator.swift in Sources */,
+				CD84FE162B567DC900858298 /* ContentView.swift in Sources */,
+				CD84FE222B567E0B00858298 /* SimpleView.swift in Sources */,
+				CD84FE142B567DC900858298 /* fast_SwiftUI_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CDB43C7E2B54CA6200AB640A /* Debug */ = {
+		CD84FE1C2B567DCA00858298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +212,7 @@
 			};
 			name = Debug;
 		};
-		CDB43C7F2B54CA6200AB640A /* Release */ = {
+		CD84FE1D2B567DCA00858298 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,14 +268,14 @@
 			};
 			name = Release;
 		};
-		CDB43C812B54CA6200AB640A /* Debug */ = {
+		CD84FE1F2B567DCA00858298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftUI_first/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"fast_SwiftUI_1/Preview Content\"";
 				DEVELOPMENT_TEAM = P3KXNQ9736;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -301,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "MadCow.swiftUI-first";
+				PRODUCT_BUNDLE_IDENTIFIER = "MadCow.fast-SwiftUI-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,14 +297,14 @@
 			};
 			name = Debug;
 		};
-		CDB43C822B54CA6200AB640A /* Release */ = {
+		CD84FE202B567DCA00858298 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftUI_first/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"fast_SwiftUI_1/Preview Content\"";
 				DEVELOPMENT_TEAM = P3KXNQ9736;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -330,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "MadCow.swiftUI-first";
+				PRODUCT_BUNDLE_IDENTIFIER = "MadCow.fast-SwiftUI-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CDB43C6D2B54CA6100AB640A /* Build configuration list for PBXProject "swiftUI_first" */ = {
+		CD84FE0B2B567DC900858298 /* Build configuration list for PBXProject "fast_SwiftUI_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDB43C7E2B54CA6200AB640A /* Debug */,
-				CDB43C7F2B54CA6200AB640A /* Release */,
+				CD84FE1C2B567DCA00858298 /* Debug */,
+				CD84FE1D2B567DCA00858298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDB43C802B54CA6200AB640A /* Build configuration list for PBXNativeTarget "swiftUI_first" */ = {
+		CD84FE1E2B567DCA00858298 /* Build configuration list for PBXNativeTarget "fast_SwiftUI_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDB43C812B54CA6200AB640A /* Debug */,
-				CDB43C822B54CA6200AB640A /* Release */,
+				CD84FE1F2B567DCA00858298 /* Debug */,
+				CD84FE202B567DCA00858298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CDB43C6A2B54CA6100AB640A /* Project object */;
+	rootObject = CD84FE082B567DC900858298 /* Project object */;
 }
