@@ -25,7 +25,7 @@ struct SimpleView3: View {
             }
             Spacer()
             Button {
-                
+                print("What's New in Photos!!")
             } label: {
                 Text("Continue")
                     .frame(maxWidth: .infinity)
