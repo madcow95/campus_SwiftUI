@@ -35,6 +35,13 @@ class HomeCell: UICollectionViewCell {
         return name
     }()
     
+    private let idTextField: UITextField = {
+        let tf = UITextField()
+        tf.placeholder = "idTextField"
+        tf.isEnabled = true
+        return tf
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -55,6 +62,11 @@ class HomeCell: UICollectionViewCell {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.topAnchor.constraint(equalTo: testImage.bottomAnchor, constant: 10).isActive = true
         nameLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 30).isActive = true
+        
+        addSubview(idTextField)
+        idTextField.translatesAutoresizingMaskIntoConstraints = false
+        idTextField.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10).isActive = true
+        idTextField.leftAnchor.constraint(equalTo: leftAnchor, constant: 30).isActive = true
     }
     
     required init?(coder: NSCoder) {
