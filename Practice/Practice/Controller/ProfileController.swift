@@ -14,7 +14,7 @@ class ProfileController: UICollectionViewController {
     }
     
     func configure() {
-        collectionView.backgroundColor = .gray
+        collectionView.backgroundColor = .cyan
         collectionView.register(ProfileCell.self, forCellWithReuseIdentifier: "ProfileCell")
     }
 }

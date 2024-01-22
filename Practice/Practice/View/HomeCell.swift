@@ -37,8 +37,13 @@ class HomeCell: UICollectionViewCell {
     
     private let idTextField: UITextField = {
         let tf = UITextField()
+        tf.borderStyle = .none
+        tf.textColor = .white
         tf.placeholder = "idTextField"
-        tf.isEnabled = true
+        tf.layer.cornerRadius = 10
+        tf.keyboardAppearance = .dark
+        tf.keyboardType = .emailAddress
+        
         return tf
     }()
     
