@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD27A31F2B5FD8ED00EE4144 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27A31E2B5FD8ED00EE4144 /* MainTabBarView.swift */; };
+		CD27A3222B5FD91100EE4144 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27A3212B5FD91100EE4144 /* HomeView.swift */; };
+		CD27A3252B5FD92000EE4144 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27A3242B5FD92000EE4144 /* ProfileView.swift */; };
 		CD84FE142B567DC900858298 /* fast_SwiftUI_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE132B567DC900858298 /* fast_SwiftUI_1App.swift */; };
 		CD84FE162B567DC900858298 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84FE152B567DC900858298 /* ContentView.swift */; };
 		CD84FE182B567DCA00858298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD84FE172B567DCA00858298 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD27A31E2B5FD8ED00EE4144 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		CD27A3212B5FD91100EE4144 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD27A3242B5FD92000EE4144 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CD84FE102B567DC900858298 /* fast_SwiftUI_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fast_SwiftUI_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD84FE132B567DC900858298 /* fast_SwiftUI_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fast_SwiftUI_1App.swift; sourceTree = "<group>"; };
 		CD84FE152B567DC900858298 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD27A3202B5FD8F200EE4144 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CD27A31E2B5FD8ED00EE4144 /* MainTabBarView.swift */,
+				CD27A3212B5FD91100EE4144 /* HomeView.swift */,
+				CD27A3242B5FD92000EE4144 /* ProfileView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		CD84FE072B567DC900858298 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +77,7 @@
 		CD84FE122B567DC900858298 /* fast_SwiftUI_1 */ = {
 			isa = PBXGroup;
 			children = (
+				CD27A3202B5FD8F200EE4144 /* TabBar */,
 				CD84FE132B567DC900858298 /* fast_SwiftUI_1App.swift */,
 				CD84FE152B567DC900858298 /* ContentView.swift */,
 				CD84FE172B567DCA00858298 /* Assets.xcassets */,
@@ -152,10 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD27A3222B5FD91100EE4144 /* HomeView.swift in Sources */,
 				CD84FE162B567DC900858298 /* ContentView.swift in Sources */,
+				CD27A3252B5FD92000EE4144 /* ProfileView.swift in Sources */,
 				CD84FE222B567E0B00858298 /* SimpleView.swift in Sources */,
 				CD84FE2A2B56883600858298 /* MyHStack.swift in Sources */,
 				CD84FE282B5687ED00858298 /* SimpleView3.swift in Sources */,
+				CD27A31F2B5FD8ED00EE4144 /* MainTabBarView.swift in Sources */,
 				CD84FE262B5683C900858298 /* MyButton.swift in Sources */,
 				CD84FE142B567DC900858298 /* fast_SwiftUI_1App.swift in Sources */,
 				CD84FE242B56818A00858298 /* SimpleView2.swift in Sources */,
