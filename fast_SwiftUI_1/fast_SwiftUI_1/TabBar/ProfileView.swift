@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State var changeSun: Bool = true
+    @State var changeSun: String = "sun.max"
+    let randomImages: [String] = ["sun.max", "sun.horizon", "sun.dust", "sun.snow", "sun.rain"]
     var body: some View {
         VStack {
-            Image(systemName: changeSun ? "sun.max" : "sun.horizon")
+            Image(systemName: changeSun)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 300)
+                .frame(width: 300, height: 300)
             
             Button {
-                changeSun.toggle()
+                if let image = randomImages.randomElement() {
+                    changeSun = image
+                }
             } label: {
                 Text("Change Image!")
                     .padding()
