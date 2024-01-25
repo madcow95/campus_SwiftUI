@@ -11,6 +11,12 @@
 		CD59E2062B626A030055CBDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E2052B626A030055CBDF /* ContentView.swift */; };
 		CD59E2082B626A040055CBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD59E2072B626A040055CBDF /* Assets.xcassets */; };
 		CD59E20B2B626A040055CBDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD59E20A2B626A040055CBDF /* Preview Assets.xcassets */; };
+		CD59E2172B626A600055CBDF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E2162B626A600055CBDF /* MainTabBarController.swift */; };
+		CD59E2192B626A6D0055CBDF /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E2182B626A6D0055CBDF /* MainTabBarView.swift */; };
+		CD59E21B2B626AAC0055CBDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E21A2B626AAC0055CBDF /* HomeView.swift */; };
+		CD59E21D2B626ABB0055CBDF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E21C2B626ABB0055CBDF /* ProfileView.swift */; };
+		CD59E2202B626B5B0055CBDF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E21F2B626B5B0055CBDF /* HomeController.swift */; };
+		CD59E2222B626B620055CBDF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E2212B626B620055CBDF /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		CD59E2052B626A030055CBDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD59E2072B626A040055CBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD59E20A2B626A040055CBDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD59E2162B626A600055CBDF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CD59E2182B626A6D0055CBDF /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		CD59E21A2B626AAC0055CBDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD59E21C2B626ABB0055CBDF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CD59E21F2B626B5B0055CBDF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		CD59E2212B626B620055CBDF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,10 @@
 		CD59E2022B626A030055CBDF /* SwiftUI_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				CD59E21E2B626B4B0055CBDF /* Util */,
+				CD59E2132B626A380055CBDF /* ViewModel */,
+				CD59E2122B626A310055CBDF /* Controller */,
+				CD59E2112B626A280055CBDF /* View */,
 				CD59E2032B626A030055CBDF /* SwiftUI_PracticeApp.swift */,
 				CD59E2052B626A030055CBDF /* ContentView.swift */,
 				CD59E2072B626A040055CBDF /* Assets.xcassets */,
@@ -65,6 +81,41 @@
 				CD59E20A2B626A040055CBDF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD59E2112B626A280055CBDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD59E2182B626A6D0055CBDF /* MainTabBarView.swift */,
+				CD59E21A2B626AAC0055CBDF /* HomeView.swift */,
+				CD59E21C2B626ABB0055CBDF /* ProfileView.swift */,
+			);
+			name = View;
+			path = "퍋ㅈ";
+			sourceTree = "<group>";
+		};
+		CD59E2122B626A310055CBDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD59E2162B626A600055CBDF /* MainTabBarController.swift */,
+				CD59E21F2B626B5B0055CBDF /* HomeController.swift */,
+				CD59E2212B626B620055CBDF /* ProfileController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD59E2132B626A380055CBDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD59E21E2B626B4B0055CBDF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +190,12 @@
 			files = (
 				CD59E2062B626A030055CBDF /* ContentView.swift in Sources */,
 				CD59E2042B626A030055CBDF /* SwiftUI_PracticeApp.swift in Sources */,
+				CD59E2202B626B5B0055CBDF /* HomeController.swift in Sources */,
+				CD59E2172B626A600055CBDF /* MainTabBarController.swift in Sources */,
+				CD59E21B2B626AAC0055CBDF /* HomeView.swift in Sources */,
+				CD59E21D2B626ABB0055CBDF /* ProfileView.swift in Sources */,
+				CD59E2192B626A6D0055CBDF /* MainTabBarView.swift in Sources */,
+				CD59E2222B626B620055CBDF /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
