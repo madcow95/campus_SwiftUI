@@ -17,6 +17,11 @@
 		CD59E21D2B626ABB0055CBDF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E21C2B626ABB0055CBDF /* ProfileView.swift */; };
 		CD59E2202B626B5B0055CBDF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E21F2B626B5B0055CBDF /* HomeController.swift */; };
 		CD59E2222B626B620055CBDF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59E2212B626B620055CBDF /* ProfileController.swift */; };
+		CD6352F22B6399F600B3D790 /* FruitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6352F12B6399F600B3D790 /* FruitListView.swift */; };
+		CD6352F72B639C0100B3D790 /* FruitListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6352F62B639C0100B3D790 /* FruitListModel.swift */; };
+		CD6352FD2B63A4BB00B3D790 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6352FC2B63A4BB00B3D790 /* SettingView.swift */; };
+		CD6353002B63A6AA00B3D790 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6352FF2B63A6AA00B3D790 /* Util.swift */; };
+		CD6353022B63A9AA00B3D790 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6353012B63A9AA00B3D790 /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		CD59E21C2B626ABB0055CBDF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CD59E21F2B626B5B0055CBDF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CD59E2212B626B620055CBDF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		CD6352F12B6399F600B3D790 /* FruitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListView.swift; sourceTree = "<group>"; };
+		CD6352F62B639C0100B3D790 /* FruitListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListModel.swift; sourceTree = "<group>"; };
+		CD6352FC2B63A4BB00B3D790 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		CD6352FF2B63A6AA00B3D790 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		CD6353012B63A9AA00B3D790 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		CD59E2022B626A030055CBDF /* SwiftUI_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				CD6352F02B6399EA00B3D790 /* Study */,
 				CD59E21E2B626B4B0055CBDF /* Util */,
 				CD59E2132B626A380055CBDF /* ViewModel */,
 				CD59E2122B626A310055CBDF /* Controller */,
@@ -114,6 +125,82 @@
 		CD59E21E2B626B4B0055CBDF /* Util */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CD6352F02B6399EA00B3D790 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				CD6352F82B63A42400B3D790 /* Assignment */,
+				CD6352F52B639B1D00B3D790 /* Model */,
+				CD6352F42B639B1600B3D790 /* ViewModel */,
+				CD6352F32B639B1000B3D790 /* View */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		CD6352F32B639B1000B3D790 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD6352F12B6399F600B3D790 /* FruitListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD6352F42B639B1600B3D790 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD6352F52B639B1D00B3D790 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD6352F62B639C0100B3D790 /* FruitListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD6352F82B63A42400B3D790 /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				CD6352FE2B63A69E00B3D790 /* Util */,
+				CD6352FB2B63A46500B3D790 /* Model */,
+				CD6352FA2B63A46000B3D790 /* ViewModel */,
+				CD6352F92B63A45B00B3D790 /* View */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
+		CD6352F92B63A45B00B3D790 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD6352FC2B63A4BB00B3D790 /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD6352FA2B63A46000B3D790 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD6352FB2B63A46500B3D790 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD6353012B63A9AA00B3D790 /* SettingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD6352FE2B63A69E00B3D790 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD6352FF2B63A6AA00B3D790 /* Util.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -190,12 +277,17 @@
 			files = (
 				CD59E2062B626A030055CBDF /* ContentView.swift in Sources */,
 				CD59E2042B626A030055CBDF /* SwiftUI_PracticeApp.swift in Sources */,
+				CD6352F72B639C0100B3D790 /* FruitListModel.swift in Sources */,
 				CD59E2202B626B5B0055CBDF /* HomeController.swift in Sources */,
 				CD59E2172B626A600055CBDF /* MainTabBarController.swift in Sources */,
 				CD59E21B2B626AAC0055CBDF /* HomeView.swift in Sources */,
 				CD59E21D2B626ABB0055CBDF /* ProfileView.swift in Sources */,
+				CD6353022B63A9AA00B3D790 /* SettingModel.swift in Sources */,
+				CD6353002B63A6AA00B3D790 /* Util.swift in Sources */,
 				CD59E2192B626A6D0055CBDF /* MainTabBarView.swift in Sources */,
 				CD59E2222B626B620055CBDF /* ProfileController.swift in Sources */,
+				CD6352F22B6399F600B3D790 /* FruitListView.swift in Sources */,
+				CD6352FD2B63A4BB00B3D790 /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
