@@ -13,9 +13,9 @@
 		CD23B2E72B626BF300FCA243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD23B2E52B626BF300FCA243 /* Main.storyboard */; };
 		CD23B2E92B626BF400FCA243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD23B2E82B626BF400FCA243 /* Assets.xcassets */; };
 		CD23B2EC2B626BF400FCA243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD23B2EA2B626BF400FCA243 /* LaunchScreen.storyboard */; };
-		CD23B2F72B626C1300FCA243 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD23B2F62B626C1300FCA243 /* MainTabBarView.swift */; };
-		CD23B2F92B626C1B00FCA243 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD23B2F82B626C1B00FCA243 /* MainTabBarController.swift */; };
-		CD23B2FB2B626C2100FCA243 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD23B2FA2B626C2100FCA243 /* MainTabBarViewModel.swift */; };
+		CD23B2F92B626C1B00FCA243 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD23B2F82B626C1B00FCA243 /* SettingController.swift */; };
+		CD23B2FB2B626C2100FCA243 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD23B2FA2B626C2100FCA243 /* SettingViewModel.swift */; };
+		CD81016D2B6631BF0053603F /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81016C2B6631BF0053603F /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		CD23B2E82B626BF400FCA243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD23B2EB2B626BF400FCA243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD23B2ED2B626BF400FCA243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD23B2F62B626C1300FCA243 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
-		CD23B2F82B626C1B00FCA243 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		CD23B2FA2B626C2100FCA243 /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
+		CD23B2F82B626C1B00FCA243 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		CD23B2FA2B626C2100FCA243 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		CD81016C2B6631BF0053603F /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		CD23B2F32B626BFE00FCA243 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD23B2F62B626C1300FCA243 /* MainTabBarView.swift */,
+				CD81016C2B6631BF0053603F /* SettingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 		CD23B2F42B626C0400FCA243 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD23B2F82B626C1B00FCA243 /* MainTabBarController.swift */,
+				CD23B2F82B626C1B00FCA243 /* SettingController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 		CD23B2F52B626C0900FCA243 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CD23B2FA2B626C2100FCA243 /* MainTabBarViewModel.swift */,
+				CD23B2FA2B626C2100FCA243 /* SettingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,10 +173,10 @@
 			files = (
 				CD23B2E42B626BF300FCA243 /* ViewController.swift in Sources */,
 				CD23B2E02B626BF300FCA243 /* AppDelegate.swift in Sources */,
-				CD23B2F92B626C1B00FCA243 /* MainTabBarController.swift in Sources */,
-				CD23B2FB2B626C2100FCA243 /* MainTabBarViewModel.swift in Sources */,
+				CD23B2F92B626C1B00FCA243 /* SettingController.swift in Sources */,
+				CD81016D2B6631BF0053603F /* SettingView.swift in Sources */,
+				CD23B2FB2B626C2100FCA243 /* SettingViewModel.swift in Sources */,
 				CD23B2E22B626BF300FCA243 /* SceneDelegate.swift in Sources */,
-				CD23B2F72B626C1300FCA243 /* MainTabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
