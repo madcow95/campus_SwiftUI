@@ -18,6 +18,7 @@ struct FruitListView: View {
 //    let fruits: [String] = ["Apple", "Banana", "Cherry", "Durian", "Kiwi", "Elder berry"]
 //    let prices: [String] = ["1000", "3000", "4000", "2400", "8000"]
     @State var fruitName: String = ""
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -29,10 +30,11 @@ struct FruitListView: View {
                     } label: {
                         Text("insert")
                             .padding()
-                            .background(.blue)
+                            .background(fruitName.isEmpty ? .gray : .blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }
+                    .disabled(fruitName.isEmpty)
                 }
                 .padding()
                 
