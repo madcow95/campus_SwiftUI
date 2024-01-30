@@ -8,51 +8,61 @@
 import UIKit
 
 class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.addSubview(SettingController().view)
+    }
+}
 
+class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "First View"
         
-        let button = UIButton(type: .system)
-        button.setTitle("Next", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 10
-        button.addTarget(self, action: #selector(nextPage), for: .touchUpInside)
-        view.addSubview(button)
+        let nextPageButton = UIButton(type: .system)
+        nextPageButton.setTitle("To Next Page", for: .normal)
+        nextPageButton.setTitleColor(.white, for: .normal)
+        nextPageButton.backgroundColor = .systemBlue
+        nextPageButton.layer.cornerRadius = 5
+        nextPageButton.addTarget(self, action: #selector(nextPage), for: .touchUpInside)
+        view.addSubview(nextPageButton)
         
-        button.translatesAutoresizingMaskIntoConstraints = false
+        nextPageButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            nextPageButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nextPageButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
     @objc func nextPage() {
-        navigationController?.pushViewController(NextPageController(), animated: true)
+        print("Next Page Tapped!")
+        let nextPage = SecondPageController()
+        navigationController?.pushViewController(nextPage, animated: true)
     }
 }
 
-class NextPageController: UIViewController {
+class SecondPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Second View"
         
-        let button = UIButton(type: .system)
-        button.setTitle("Second Page", for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 10
-        button.addTarget(self, action: #selector(beforePage), for: .touchUpInside)
-        view.addSubview(button)
+        let beforePageButton = UIButton(type: .system)
+        beforePageButton.setTitle("To Before Page", for: .normal)
+        beforePageButton.backgroundColor = .systemBlue
+        beforePageButton.layer.cornerRadius = 5
+        beforePageButton.addTarget(self, action: #selector(beforePage), for: .touchUpInside)
+        view.addSubview(beforePageButton)
         
-        button.translatesAutoresizingMaskIntoConstraints = false
+        beforePageButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            beforePageButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            beforePageButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
     @objc func beforePage() {
-        print("before page button clicked")
+        print("Before Page Tapped!")
+//        navigationController?.popViewController(animated: true)
     }
 }
