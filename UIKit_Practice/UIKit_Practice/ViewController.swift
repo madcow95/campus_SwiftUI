@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(SettingController().view)
+//        view.addSubview(SettingController().view)
     }
 }
 
