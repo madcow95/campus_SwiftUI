@@ -2,53 +2,51 @@
 //  SettingView.swift
 //  UIKit_Practice
 //
-//  Created by MadCow on 2024/2/1.
+//  Created by MadCow on 2024/2/10.
 //
 
 import UIKit
 
-class SettingView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var tableView: UITableView!
-    let settings: [SettingModel] = [SettingModel(image: UIImage(systemName: "person")!, title: "태양")]
-//    let settings: [[SettingModel]] = [
-//        [SettingModel(image: UIImage(systemName: "person")!, title: "태양")]
-//    ]
+    var tableViewModel = SettingViewModel()
     
-    private let testTable: UITableView = {
-        let table = UITableView()
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         
-        return table
+        return label
+    }()
+    
+    var descLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configure()
-    }
-    
-    func configure() {
-        view.backgroundColor = .white
-        navigationItem.title = "Test Title"
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settings.count
+        return tableViewModel.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SettingViewCell", for: indexPath)
-//        let item = settings[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = tableViewModel.items[indexPath.item].title
+        cell.detailTextLabel?.text = tableViewModel.items[indexPath.item].price
         return cell
     }
+    
 }
