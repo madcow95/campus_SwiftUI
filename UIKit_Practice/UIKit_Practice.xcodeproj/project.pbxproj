@@ -17,7 +17,6 @@
 		CD23B2E72B626BF300FCA243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD23B2E52B626BF300FCA243 /* Main.storyboard */; };
 		CD23B2E92B626BF400FCA243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD23B2E82B626BF400FCA243 /* Assets.xcassets */; };
 		CD23B2EC2B626BF400FCA243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD23B2EA2B626BF400FCA243 /* LaunchScreen.storyboard */; };
-		CD7417CD2B6BBE99008B8672 /* SettingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7417CC2B6BBE99008B8672 /* SettingView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		CD23B2E82B626BF400FCA243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD23B2EB2B626BF400FCA243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD23B2ED2B626BF400FCA243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD7417CC2B6BBE99008B8672 /* SettingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CD19F7142B78CA9100844F8C /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		CD23B2D32B626BF300FCA243 = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +64,6 @@
 		CD23B2DE2B626BF300FCA243 /* UIKit_Practice */ = {
 			isa = PBXGroup;
 			children = (
-				CD19F7142B78CA9100844F8C /* Util */,
 				CD23B2F52B626C0900FCA243 /* ViewModel */,
 				CD23B2F42B626C0400FCA243 /* Model */,
 				CD23B2F32B626BFE00FCA243 /* View */,
@@ -91,7 +81,6 @@
 		CD23B2F32B626BFE00FCA243 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CD7417CC2B6BBE99008B8672 /* SettingView2.swift */,
 				CD1781A82B7793D80016F718 /* SettingView.swift */,
 				CD19F7122B78AE0200844F8C /* SettingTableCell.swift */,
 			);
@@ -190,7 +179,6 @@
 				CD1781A92B7793D80016F718 /* SettingView.swift in Sources */,
 				CD1781AF2B77A21B0016F718 /* SettingModel.swift in Sources */,
 				CD23B2E02B626BF300FCA243 /* AppDelegate.swift in Sources */,
-				CD7417CD2B6BBE99008B8672 /* SettingView2.swift in Sources */,
 				CD23B2E22B626BF300FCA243 /* SceneDelegate.swift in Sources */,
 				CD19F7132B78AE0200844F8C /* SettingTableCell.swift in Sources */,
 			);

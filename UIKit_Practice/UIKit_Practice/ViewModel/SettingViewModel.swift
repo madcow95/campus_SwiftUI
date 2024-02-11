@@ -8,7 +8,7 @@
 import UIKit
 
 struct SettingViewModel {
-    let items: [[SettingModel]] = [
+    var items: [[SettingModel]] = [
         [
             SettingModel(title: "스크린 타임", image: "hourglass", backgroundColor: .purple)
         ],

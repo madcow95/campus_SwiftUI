@@ -9,7 +9,7 @@ import UIKit
 
 class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let tableViewModel = SettingViewModel()
+    var tableViewModel = SettingViewModel()
     var tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
@@ -59,5 +59,12 @@ class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = tableViewModel.items[indexPath.section][indexPath.item]
         print(item.title)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableViewModel.items[indexPath.section].remove(at: indexPath.item)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }
