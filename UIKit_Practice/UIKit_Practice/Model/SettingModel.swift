@@ -5,9 +5,10 @@
 //  Created by MadCow on 2024/2/10.
 //
 
-import Foundation
+import UIKit
 
 struct SettingModel {
     let title: String
-    let price: String
+    let image: String
+    let backgroundColor: UIColor
 }

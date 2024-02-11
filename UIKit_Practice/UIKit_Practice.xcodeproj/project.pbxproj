@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD1781A92B7793D80016F718 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1781A82B7793D80016F718 /* SettingView.swift */; };
-		CD1781AB2B7794190016F718 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1781AA2B7794190016F718 /* SettingTableView.swift */; };
 		CD1781AD2B77A16F0016F718 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1781AC2B77A16F0016F718 /* SettingViewModel.swift */; };
 		CD1781AF2B77A21B0016F718 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1781AE2B77A21B0016F718 /* SettingModel.swift */; };
 		CD19F7132B78AE0200844F8C /* SettingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD19F7122B78AE0200844F8C /* SettingTableCell.swift */; };
@@ -23,7 +22,6 @@
 
 /* Begin PBXFileReference section */
 		CD1781A82B7793D80016F718 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		CD1781AA2B7794190016F718 /* SettingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
 		CD1781AC2B77A16F0016F718 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		CD1781AE2B77A21B0016F718 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		CD19F7122B78AE0200844F8C /* SettingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableCell.swift; sourceTree = "<group>"; };
@@ -49,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD19F7142B78CA9100844F8C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CD23B2D32B626BF300FCA243 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +73,7 @@
 		CD23B2DE2B626BF300FCA243 /* UIKit_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				CD19F7142B78CA9100844F8C /* Util */,
 				CD23B2F52B626C0900FCA243 /* ViewModel */,
 				CD23B2F42B626C0400FCA243 /* Model */,
 				CD23B2F32B626BFE00FCA243 /* View */,
@@ -87,7 +93,6 @@
 			children = (
 				CD7417CC2B6BBE99008B8672 /* SettingView2.swift */,
 				CD1781A82B7793D80016F718 /* SettingView.swift */,
-				CD1781AA2B7794190016F718 /* SettingTableView.swift */,
 				CD19F7122B78AE0200844F8C /* SettingTableCell.swift */,
 			);
 			path = View;
@@ -183,7 +188,6 @@
 				CD23B2E42B626BF300FCA243 /* ViewController.swift in Sources */,
 				CD1781AD2B77A16F0016F718 /* SettingViewModel.swift in Sources */,
 				CD1781A92B7793D80016F718 /* SettingView.swift in Sources */,
-				CD1781AB2B7794190016F718 /* SettingTableView.swift in Sources */,
 				CD1781AF2B77A21B0016F718 /* SettingModel.swift in Sources */,
 				CD23B2E02B626BF300FCA243 /* AppDelegate.swift in Sources */,
 				CD7417CD2B6BBE99008B8672 /* SettingView2.swift in Sources */,

@@ -8,11 +8,17 @@
 import UIKit
 
 struct SettingViewModel {
-    let items: [SettingModel] = [
-        SettingModel(title: "사과", price: "1000"),
-        SettingModel(title: "배", price: "2000"),
-        SettingModel(title: "참외", price: "3000"),
-        SettingModel(title: "한라봉", price: "4000"),
-        SettingModel(title: "귤", price: "5000")
+    let items: [[SettingModel]] = [
+        [
+            SettingModel(title: "스크린 타임", image: "hourglass", backgroundColor: .purple)
+        ],
+        [
+            SettingModel(title: "일반", image: "gear", backgroundColor: .gray),
+            SettingModel(title: "손쉬운 사용", image: "person.crop.circle", backgroundColor: .blue),
+            SettingModel(title: "개인정보 보호 및 보안", image: "hand.raised.fill", backgroundColor: .blue)
+        ],
+        [
+            SettingModel(title: "암호", image: "key.fill", backgroundColor: .gray)
+        ]
     ]
 }
