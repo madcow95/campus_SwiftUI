@@ -34,8 +34,8 @@ class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate 
         view.addSubview(tableView)
         
         tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//        tableView.delegate = self
+        tableView.register(SettingTableCell.self, forCellReuseIdentifier: "SettingTableCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,9 +43,13 @@ class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = tableViewModel.items[indexPath.item].title
-        cell.detailTextLabel?.text = tableViewModel.items[indexPath.item].price
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SettingTableCell", for: indexPath) as? SettingTableCell else {
+            return UITableViewCell()
+        }
+//        cell.textLabel?.text = tableViewModel.items[indexPath.item].title
+//        cell.detailTextLabel?.text = tableViewModel.items[indexPath.item].price
+        cell.titleLabel.text = tableViewModel.items[indexPath.item].title
+        cell.subscriptionLabel.text = tableViewModel.items[indexPath.item].price
         return cell
     }
     
