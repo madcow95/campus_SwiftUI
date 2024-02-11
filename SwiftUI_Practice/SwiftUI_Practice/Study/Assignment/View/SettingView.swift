@@ -47,6 +47,9 @@ struct SettingView: View {
                         }
                     }
                 }
+                .onDelete { IndexSet in
+                    settingInfos.remove(atOffsets: IndexSet)
+                }
             }
             .navigationTitle("설정")
         }

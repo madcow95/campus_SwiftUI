@@ -10,25 +10,27 @@ import UIKit
 class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var tableViewModel = SettingViewModel()
-    var tableView: UITableView = {
-        let table = UITableView()
-        table.translatesAutoresizingMaskIntoConstraints = false
-        return table
+    var customTable: UITableView = {
+        var ta = UITableView()
+        ta.translatesAutoresizingMaskIntoConstraints = false
+        
+        return ta
     }()
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         navigationItem.title = "설정"
         
-        tableView = UITableView(frame: view.bounds, style: .insetGrouped)
+        customTable = UITableView(frame: view.bounds, style: .insetGrouped)
 //        tableView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(tableView)
-        tableView.layer.cornerRadius = 10
-        tableView.layer.masksToBounds = true
+        view.addSubview(customTable)
+        customTable.layer.cornerRadius = 10
+        customTable.layer.masksToBounds = true
         
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(SettingTableCell.self, forCellReuseIdentifier: "SettingTableCell")
+        customTable.dataSource = self
+        customTable.delegate = self
+        customTable.register(SettingTableCell.self, forCellReuseIdentifier: "SettingTableCell")
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,9 +46,8 @@ class SettingView: UIViewController, UITableViewDataSource, UITableViewDelegate 
             return UITableViewCell()
         }
         let item = tableViewModel.items[indexPath.section][indexPath.item]
-        let image = UIImage(systemName: item.image)!
         
-        cell.tableImage.image = image
+        cell.tableImage.image = UIImage(systemName: item.image)!
         cell.tableImage.backgroundColor = item.backgroundColor
         cell.tableImage.tintColor = .white
         cell.tableImage.layer.cornerRadius = 5

@@ -12,8 +12,8 @@ class SettingTableCell: UITableViewCell {
     var tableImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFill
-        image.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        image.contentMode = .scaleAspectFit
+//        image.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         
         return image
     }()
@@ -21,14 +21,7 @@ class SettingTableCell: UITableViewCell {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-//        label.font = .systemFont(ofSize: 30, weight: .bold)
-        
-        return label
-    }()
-    
-    let subscriptionLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.black
         
         return label
     }()
@@ -37,13 +30,12 @@ class SettingTableCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         contentView.addSubview(tableImage)
-        tableImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         tableImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
+        tableImage.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         
         contentView.addSubview(titleLabel)
-        titleLabel.textColor = .black
         titleLabel.leadingAnchor.constraint(equalTo: tableImage.trailingAnchor, constant: 15).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: tableImage.centerYAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {
