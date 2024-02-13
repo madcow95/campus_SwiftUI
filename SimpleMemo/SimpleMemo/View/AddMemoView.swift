@@ -9,6 +9,7 @@ import UIKit
 
 class AddMemoView: UIViewController {
     
+    var delegate: DataUpdateDelegate?
     var workoutList = MemoViewModel().getAllWorkout()
     
     let workoutName: UITextField = {
@@ -60,8 +61,9 @@ class AddMemoView: UIViewController {
         
         registerButton.addTarget(self, action: #selector(registerWorkout), for: .touchUpInside)
         view.addSubview(registerButton)
+        registerButton.topAnchor.constraint(equalTo: setCount.bottomAnchor, constant: 10).isActive = true
         registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        registerButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
+//        registerButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
         registerButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
         registerButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
@@ -72,9 +74,14 @@ class AddMemoView: UIViewController {
     }
     
     @objc func registerWorkout() {
-        let memo = MemoView()
-        memo.appendWorkoutList()
+        guard let workoutName = workoutName.text else {
+            return
+        }
         
+        guard let setCount = setCount.text else {
+            return
+        }
+        delegate?.didUpdateData(name: workoutName, set: Int(setCount)!)
         dismiss(animated: true)
     }
 }

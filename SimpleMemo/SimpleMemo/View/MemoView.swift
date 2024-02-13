@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate, DataUpdateDelegate {
     
     var workoutList = MemoViewModel().getAllWorkout()
     var memoTable: UITableView = {
@@ -59,18 +60,9 @@ class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    func appendWorkoutList() {
-        var lastCount = 1
-        if let lastElement = workoutList.last {
-            lastCount = lastElement.setCount + 1
-        }
-        
-        workoutList.append(MemoModel(name: "가슴", setCount: lastCount))
-        memoTable.reloadData()
-    }
-    
     @objc func addWorkoutList() {
         let vc = AddMemoView()
+        vc.delegate = self
         present(vc, animated: true)
     }
     
@@ -78,6 +70,11 @@ class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if workoutList.count > 0 {
             workoutList.removeLast()
         }
+        memoTable.reloadData()
+    }
+    
+    func didUpdateData(name: String, set: Int) {
+        workoutList.append(MemoModel(name: name, setCount: set))
         memoTable.reloadData()
     }
 }

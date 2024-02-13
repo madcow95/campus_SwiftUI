@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3B5CD92B7BA05D00CF4CB2 /* CustomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B5CD82B7BA05D00CF4CB2 /* CustomProtocol.swift */; };
 		CDAFDAE32B7A293800932D01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFDAE22B7A293800932D01 /* AppDelegate.swift */; };
 		CDAFDAE52B7A293800932D01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFDAE42B7A293800932D01 /* SceneDelegate.swift */; };
 		CDAFDAE72B7A293800932D01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFDAE62B7A293800932D01 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD3B5CD82B7BA05D00CF4CB2 /* CustomProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProtocol.swift; sourceTree = "<group>"; };
 		CDAFDADF2B7A293800932D01 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAFDAE22B7A293800932D01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAFDAE42B7A293800932D01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD3B5CD72B7BA04B00CF4CB2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CD3B5CD82B7BA05D00CF4CB2 /* CustomProtocol.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CDAFDAD62B7A293800932D01 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		CDAFDAE12B7A293800932D01 /* SimpleMemo */ = {
 			isa = PBXGroup;
 			children = (
+				CD3B5CD72B7BA04B00CF4CB2 /* Util */,
 				CDAFDAF92B7A295300932D01 /* Model */,
 				CDAFDAF82B7A294E00932D01 /* ViewModel */,
 				CDAFDAF62B7A294200932D01 /* View */,
@@ -189,6 +200,7 @@
 				CDAFDAFB2B7A295D00932D01 /* MemoModel.swift in Sources */,
 				CDAFDAFD2B7A296300932D01 /* MemoViewModel.swift in Sources */,
 				CDAFDB012B7A297200932D01 /* MemoTable.swift in Sources */,
+				CD3B5CD92B7BA05D00CF4CB2 /* CustomProtocol.swift in Sources */,
 				CDAFDAE32B7A293800932D01 /* AppDelegate.swift in Sources */,
 				CDAFDAFF2B7A296A00932D01 /* MemoView.swift in Sources */,
 				CDAFDB0D2B7A55CD00932D01 /* AddMemoView.swift in Sources */,
