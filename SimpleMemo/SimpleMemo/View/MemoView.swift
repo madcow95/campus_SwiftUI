@@ -59,15 +59,19 @@ class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
-    @objc func addWorkoutList() {
-        /*var lastCount = 1
+    func appendWorkoutList() {
+        var lastCount = 1
         if let lastElement = workoutList.last {
             lastCount = lastElement.setCount + 1
         }
+        
         workoutList.append(MemoModel(name: "가슴", setCount: lastCount))
         memoTable.reloadData()
-        */
-        present(AddMemoView(), animated: true)
+    }
+    
+    @objc func addWorkoutList() {
+        let vc = AddMemoView()
+        present(vc, animated: true)
     }
     
     @objc func deleteWorkoutList() {

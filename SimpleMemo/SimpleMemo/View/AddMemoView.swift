@@ -9,6 +9,8 @@ import UIKit
 
 class AddMemoView: UIViewController {
     
+    var workoutList = MemoViewModel().getAllWorkout()
+    
     let workoutName: UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +36,6 @@ class AddMemoView: UIViewController {
         btn.backgroundColor = .blue
         btn.layer.cornerRadius = 10
         btn.layer.masksToBounds = true
-        btn.addTarget(AddMemoView.self, action: #selector(registerWorkout), for: .touchUpInside)
         
         return btn
     }()
@@ -57,6 +58,7 @@ class AddMemoView: UIViewController {
         setCount.topAnchor.constraint(equalTo: workoutName.bottomAnchor, constant: 10).isActive = true
         setCount.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
         
+        registerButton.addTarget(self, action: #selector(registerWorkout), for: .touchUpInside)
         view.addSubview(registerButton)
         registerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         registerButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30).isActive = true
@@ -70,6 +72,9 @@ class AddMemoView: UIViewController {
     }
     
     @objc func registerWorkout() {
-        print("tetetet")
+        let memo = MemoView()
+        memo.appendWorkoutList()
+        
+        dismiss(animated: true)
     }
 }
