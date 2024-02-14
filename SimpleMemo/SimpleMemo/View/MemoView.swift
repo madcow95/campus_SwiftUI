@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate, DataUpdateDelegate {
     
     var workoutList = MemoViewModel().getAllWorkout()
@@ -47,8 +46,8 @@ class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate, Da
         }
         
         let item = workoutList[indexPath.item]
-        cell.workLabel.text = item.name
-        cell.countLabel.text = String(item.setCount)
+        cell.workLabel.text = item.title
+        cell.countLabel.text = String(item.memoContent)
         
         return cell
     }
@@ -60,21 +59,27 @@ class MemoView: UIViewController, UITableViewDataSource, UITableViewDelegate, Da
         }
     }
     
+    func updateData(name: String, content: String) {
+        workoutList.append(MemoModel(title: name, memoContent: content))
+        memoTable.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let item = workoutList[indexPath.item]
+        navigationController?.pushViewController(MemoDetailView(), animated: true)
+    }
+    
     @objc func addWorkoutList() {
         let vc = AddMemoView()
         vc.delegate = self
-        present(vc, animated: true)
+//        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func deleteWorkoutList() {
         if workoutList.count > 0 {
             workoutList.removeLast()
         }
-        memoTable.reloadData()
-    }
-    
-    func didUpdateData(name: String, set: Int) {
-        workoutList.append(MemoModel(name: name, setCount: set))
         memoTable.reloadData()
     }
 }

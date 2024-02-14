@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD3B5CD92B7BA05D00CF4CB2 /* CustomProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B5CD82B7BA05D00CF4CB2 /* CustomProtocol.swift */; };
+		CD85593E2B7CA21700BCFB70 /* MemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85593D2B7CA21700BCFB70 /* MemoDetailView.swift */; };
 		CDAFDAE32B7A293800932D01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFDAE22B7A293800932D01 /* AppDelegate.swift */; };
 		CDAFDAE52B7A293800932D01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFDAE42B7A293800932D01 /* SceneDelegate.swift */; };
 		CDAFDAE72B7A293800932D01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAFDAE62B7A293800932D01 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		CD3B5CD82B7BA05D00CF4CB2 /* CustomProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProtocol.swift; sourceTree = "<group>"; };
+		CD85593D2B7CA21700BCFB70 /* MemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailView.swift; sourceTree = "<group>"; };
 		CDAFDADF2B7A293800932D01 /* SimpleMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAFDAE22B7A293800932D01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDAFDAE42B7A293800932D01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				CDAFDAF72B7A294700932D01 /* Cell */,
 				CDAFDAFE2B7A296A00932D01 /* MemoView.swift */,
 				CDAFDB0C2B7A55CD00932D01 /* AddMemoView.swift */,
+				CD85593D2B7CA21700BCFB70 /* MemoDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				CDAFDAE72B7A293800932D01 /* ViewController.swift in Sources */,
 				CDAFDAFB2B7A295D00932D01 /* MemoModel.swift in Sources */,
 				CDAFDAFD2B7A296300932D01 /* MemoViewModel.swift in Sources */,
+				CD85593E2B7CA21700BCFB70 /* MemoDetailView.swift in Sources */,
 				CDAFDB012B7A297200932D01 /* MemoTable.swift in Sources */,
 				CD3B5CD92B7BA05D00CF4CB2 /* CustomProtocol.swift in Sources */,
 				CDAFDAE32B7A293800932D01 /* AppDelegate.swift in Sources */,

@@ -8,5 +8,5 @@
 import UIKit
 
 protocol DataUpdateDelegate: AnyObject {
-    func didUpdateData(name: String, set: Int)
+    func updateData(name: String, content: String)
 }

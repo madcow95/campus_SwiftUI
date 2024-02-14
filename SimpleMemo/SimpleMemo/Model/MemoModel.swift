@@ -8,6 +8,6 @@
 import UIKit
 
 struct MemoModel {
-    let name: String
-    let setCount: Int
+    let title: String
+    let memoContent: String
 }
